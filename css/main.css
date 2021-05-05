@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    /*background: linear-gradient(0deg, rgb(7, 7, 7) 14%, rgb(125, 127, 128), rgb(7, 7, 7));
+    background: linear-gradient(0deg, rgb(14, 27, 36), rgb(86, 181, 184), rgb(26, 36, 46));
+    background-image: url('../img/bg.jpg');*/
+    background: linear-gradient(0deg, rgb(1, 3, 4), rgb(62, 80, 97), rgb(6, 9, 11));
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header__inner{
+    width: 100%;
+    height: 60px;
+    background-image: url('../img/bg-header-gray3.jpg');
+    background-repeat: repeat-x;
+    padding: 10px 0;
+}
+.header__inner nav{
+	margin-top: 7px;
+}
+.header__menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.header__menu li{
+    padding-bottom: 0px;
+    transition: transform .3s;
+    cursor: pointer;
+    position: relative;
+}
+.header__menu li a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    position: relative;
+    transition: text-shadow .3s;
+}
+
+.header__menu li a:hover{
+    text-shadow: 2px 2px 6px white, -2px -2px 6px white;
+}
+.yellow{
+    height: 2px;
+    background-color: #e62f05;
+    background-repeat: repeat-x;
+}
+
+/*square animation*/
+.square-container{
+    display: none;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 47px;
+    transition: all 0.6s;
+}
+.square{
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255,255,255, 0.6);
+    border-radius: 2px;
+    position: absolute;
+    transition: all 0.5s
+}
+.pos1{
+    top: 0;
+    left: 0;
+}
+.pos2{
+    top: 0;
+    left: 15px;
+}
+.pos3{
+    top: 15px;
+    left: 15px;
+}
+.pos4{
+    top: 15px;
+    left: 0;
+}
+/*square animation end*/
+
+main{
+    height: 90vh;
+    position: relative;
+}
+section{
+    height: 85vh;
+    position: absolute;
+    /*border: 3px solid #6f6f6f;*/
+    border-radius: 4px;
+    background-color: #222931;
+    background-color: transparent;
+    margin-top: 40px;
+}
+
+
+/*home*/
+.home{
+    width: 100%;
+    padding: 20px;
+    padding-top: 100px;
+    transition: 0.6s;
+    color: #fff;
+}
+.home h1{
+     font-size: 36px;
+     display: inline-block;
+     margin-top: 20px;
+     margin-bottom: 20px;
+}
+.home img{
+    float: right;
+}
+.home p{
+    line-height: 2;
+}
+
+
+
+
+/*portfolio*/
+.portfolio{
+    padding-top: 200px;
+    width: 100%;
+    opacity: 0;
+    transition: opacity .6s;
+}
+.portfolio__inner{
+    max-width: 1100px;
+    position: relative;
+    margin: 0 auto;
+}
+.portfolio__item{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 1.2s;
+    /* border: 5px solid rgb(167, 167, 167); */
+    border-radius: 10px;
+    overflow: hidden;
+}
+.portfolio__item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.left, .right{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    background-image: url('../img/bg-arrows.jpg');
+    background-repeat: repeat-x;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 32px;
+    cursor: pointer;
+    box-shadow: 1px 8px 15px #3876ab;
+    text-shadow: 3px 3px 6px #000;
+}
+/* 0f1217 */
+.left:active, .right:active{
+    box-shadow: 0px 4px 4px #051a2b;
+    text-shadow: 1px 1px 3px #000;
+}
+.left:disabled, .right:disabled{
+    box-shadow: 0px 4px 4px #051a2b;
+}
+.left{
+    left: 15%;
+}
+.right{
+    left: 70%;
+}
+.active{
+    width: 350px;
+    height: 600px;
+    top: -150px;
+    right: 32%;
+}
+.active-left{
+    width: 200px;
+    height: 300px;
+    right: 82%;
+    top: 0;
+}
+.active-right{
+    width: 200px;
+    height: 300px;
+    top: 0;
+    right: 0;
+}
+
+
+
+/*contact*/
+.contact{
+    width: 100%;
+    padding: 20px;
+    padding-top: 150px;
+    opacity: 0;
+    transition: opacity .6s;
+    color: #fff;
+    text-align: center;
+}
+.contact p{
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.contact a{
+    color: #fff;
+    text-decoration: none;
+}
+
