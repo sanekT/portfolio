@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио</title>
+    <title>Мои работы</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://sanekt.github.io/portfolio/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
@@ -40,60 +41,70 @@
     <div class="container">
         <main>
             <section class="home">
-                <img src="http://placehold.it/400x500" alt="">
-                <h3>Телегин Александр</h3>
-                <h1>Верстальщик сайтов</h1>
-                <p>Верстаю сайты более 2х лет. Адаптивная и фиксированная вёрстка без посадки на CMS. Подхожу к работе очень ответственно, всегда на связи.</p>
+                <div class="home__description">
+                    <h3>Телегин Александр</h3>
+                    <h1>Верстальщик сайтов</h1>
+                    <p>Верстаю сайты более 2х лет. Адаптивная и фиксированная вёрстка без посадки на CMS. Подхожу к работе очень ответственно, всегда на связи.</p>
+                </div>
+                <div class="home__img">
+                    <img src="http://placehold.it/400x500" alt="">
+                </div>
             </section>
     
             <section class="portfolio">
                 <div class="portfolio__inner">
-                    <!-- Если добавляю новую карточку, то нужно довалять в конец и дописывать последнему класс active -->
-                    <div class="portfolio__item">
-                        <a href="#"><img src="img/1.jpg" alt=""></a>
-                    </div>
-                    <div class="portfolio__item">
-                        <a href="#"><img src="img/2.jpg" alt=""></a>
-                    </div>
-                    <div class="portfolio__item">
-                        <a href="#"><img src="img/3.jpg" alt=""></a>
-                    </div>
-                    <div class="portfolio__item">
-                        <a href="#"><img src="img/4.jpg" alt=""></a>
-                    </div>
-                    <div class="portfolio__item">
-                        <a href="#"><img src="img/5.jpg" alt=""></a>
-                    </div>
-                    <div class="portfolio__item">
-                        <a href="#"><img src="img/6.jpg" alt=""></a>
-                    </div>
-                    <div class="portfolio__item">
-                        <a href="#"><img src="img/7.jpg" alt=""></a>
-                    </div>
-                    <div class="portfolio__item">
-                        <a href="Nike/index.html" target="_blank"><img src="img/screen-nike.png" alt=""></a>
-                    </div>
-                    <div class="portfolio__item">
-                        <a href="SochiTur/index.html" target="_blank"><img src="img/screen-sochi.png" alt=""></a>
-                    </div>
-                    <div class="portfolio__item active">
-                        <a href="TaxiVezi/index.html" target="_blank"><img src="img/screen-taxi.png" alt=""></a>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="portfolio__item swiper-slide">
+                                <a href="Nike/index.html" target="_blank"><img src="img/screen-nike.png" alt=""></a>
+                            </div>
+                            <div class="portfolio__item swiper-slide">
+                                <a href="SochiTur/index.html" target="_blank"><img src="img/screen-sochi.png" alt=""></a>
+                            </div>
+                            <div class="portfolio__item swiper-slide">
+                                <a href="TaxiVezi/index.html" target="_blank"><img src="img/screen-taxi.png" alt=""></a>
+                            </div>
+                            <div class="portfolio__item swiper-slide">
+                                <a href="Course/index.html" target="_blank">
+								<img src="img/screen-course.jpg" alt=""></a>
+                            </div>
+                            <div class="portfolio__item swiper-slide">
+                                <a href="#"><img src="img/2.jpg" alt=""></a>
+                            </div>
+                            <div class="portfolio__item swiper-slide">
+                                <a href="#"><img src="img/3.jpg" alt=""></a>
+                            </div>
+                            <div class="portfolio__item swiper-slide">
+                                <a href="#"><img src="img/4.jpg" alt=""></a>
+                            </div>
+                            <div class="portfolio__item swiper-slide">
+                                <a href="#"><img src="img/5.jpg" alt=""></a>
+                            </div>
+                            <div class="portfolio__item swiper-slide">
+                                <a href="#"><img src="img/6.jpg" alt=""></a>
+                            </div>
+                            <div class="portfolio__item swiper-slide">
+                                <a href="#"><img src="img/7.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
-                <button class="left">Листать туда</button>
-                <button class="right">Листать сюда</button>
             </section>
 
             <section class="contact">
                 <h2>Чтобы связаться со мной вы можете позвонить:</h2>
-                <p><a href="let:89189409374">+7(918) 940-93-74</a></p>
+                <p><a href="tel:89189409374">+7(918) 940-93-74</a></p>
                 <h2>Или написать в одну из следующих соц. сетей:</h2>
                 <p></p>
             </section>
         </main>
     </div>
 
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
-    <script src="https://sanekt.github.io/portfolio/js/main.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
