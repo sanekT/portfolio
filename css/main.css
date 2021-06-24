@@ -4,7 +4,6 @@
     padding: 0;
 }
 body{
-    height: 100vh;
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(0deg, rgb(1, 3, 4), rgb(62, 80, 97), rgb(6, 9, 11));
     background-repeat: no-repeat;
