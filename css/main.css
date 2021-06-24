@@ -295,6 +295,9 @@ section{
 		height: 566px;
         padding-top: 136px;
 	}
+    .contact{
+        padding-top: 130px;
+    }
     
 }
 @media (max-width: 440px){
@@ -302,6 +305,9 @@ section{
 		height: 522px;
         padding-top: 122px;
 	}
+    .contact{
+        padding-top: 70px;
+    }
 }
 @media (max-width: 420px){
 	.swiper-container{
