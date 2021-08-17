@@ -3,52 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Мои работы</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-
+    
     <header class="header">
         <div class="header__inner">
             <div class="container">
-                <nav>
-                    <div class="square-container">
-                        <div class="square pos1"></div>
-                        <div class="square pos2"></div>
-                        <div class="square pos3"></div>
-                        <div class="square pos4"></div>
-                    </div>
-                    <ul class="header__menu">
-                        <li class="active-menu">
-                            <a href="#" class="g" data-home>Главная</a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item a">
+                            <a href="#" class="active-menu" data-section="home">Главная</a>
                         </li>
-                        <li>
-                            <a href="#" class="r" data-portfolio>Мои работы</a>
+                        <li class="menu__list-item b">
+                            <a href="#" data-section="portfolio">Мои работы</a>
                         </li>
-                        <li>
-                            <a href="#" class="s" data-contact>Связаться</a>
+                        <li class="menu__list-item c">
+                            <a href="#" data-section="contact">Связаться</a>
                         </li>
                     </ul>
                 </nav>
+                <div class="square-container">
+                    <div class="square pos1"></div>
+                    <div class="square pos2"></div>
+                    <div class="square pos3"></div>
+                    <div class="square pos4"></div>
+                </div>
             </div>
         </div>
     </header>
     
 
-    <div class="container">
+    
+    <div class="container main-container">
         <main>
             <section class="home">
-                <div class="home__description">
+                <div class="home__left">
                     <h3>Телегин Александр</h3>
                     <h1>Верстальщик сайтов</h1>
                     <p>Верстаю сайты более 2х лет. Адаптивная и фиксированная вёрстка без посадки на CMS. Подхожу к работе очень ответственно, всегда на связи.</p>
                 </div>
-                <div class="home__img">
-                    <img src="http://placehold.it/400x500" alt="">
+                <div class="home__right">
+                    <img src="http://placehold.it/400x500" alt="Фотография">
                 </div>
+                
             </section>
     
             <section class="portfolio">
@@ -65,8 +65,7 @@
                                 <a href="TaxiVezi/index.html" target="_blank"><img src="img/screen-taxi.png" alt=""></a>
                             </div>
                             <div class="portfolio__item swiper-slide">
-                                <a href="Course/index.html" target="_blank">
-								<img src="img/screen-course.jpg" alt=""></a>
+                                <a href="#"><img src="img/1.jpg" alt=""></a>
                             </div>
                             <div class="portfolio__item swiper-slide">
                                 <a href="#"><img src="img/2.jpg" alt=""></a>
@@ -96,15 +95,21 @@
             </section>
 
             <section class="contact">
-                <h2>Чтобы связаться со мной вы можете позвонить:</h2>
-                <p><a href="tel:89189409374">+7(918) 940-93-74</a></p>
-                <h2>Или написать в одну из следующих соц. сетей:</h2>
-                <p></p>
+                <div class="contact__inner">
+                    <h2>Чтобы связаться со мной вы можете позвонить:</h2>
+                    <p><a href="tel:89189409374">+7(918) 940-93-74</a></p>
+                    <h2>Или написать в одну из следующих соц. сетей:</h2>
+                </div>
+            </section>
+
+            <section class="height">
+
             </section>
         </main>
     </div>
+    
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/libs.min.js"></script>
     <script type="module" src="js/main.js"></script>
 </body>
 </html>
