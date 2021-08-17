@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Open+Sans:ital,wght@0,600;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <title>ТаксиВези</title>
+    <!-- my css -->
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header-container">
+            <div class="header__inner">
+                <div class="header__top">
+                    <div class="logo">
+                        <a href="#">
+                            <h1 class="logo__title">Такси<span>Вези</span></h1>
+                        </a>
+                    </div>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="#our-tarifs">Цены</a></li>
+                            <li class="menu__item"><a href="#bonus">Награды</a></li>
+                            <li class="menu__item"><a href="#app">Наше приложение</a></li>
+                            <li class="menu__item"><a href="#contacts">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <img class="menu__mobile" src="img/header/m-menu.png"/>
+                </div>
+                <div class="header__center">
+                    <h2 class="header__center-title animate__animated animate__backInDown animate__slow animate__delay-3s">Звоните, заказывайте и мы приедем быстро</h2>
+                    <a class="header__center-phone" href="tel:9239171234567">923 (917) 12-34-567</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="header__car">
+            <img src="img/header/car.png" alt="Car">
+        </div>
+    </header>
+
+    
+    <section class="order">
+        <div class="container">
+            <div class="order__inner">
+                <div class="order__left">
+                    <h3 class="order__left-suptitle">Лучшие в городе</h3>
+                    <h2 class="order__left-title">Мы временем заслужили доверие жителей нашего города</h2>
+                    <p class="order__left-text">
+                        Повседневная практика показывает, что перспективное планирование, в своём классическом представлении, допускает внедрение анализа существующих паттернов поведения. Каждый из нас понимает очевидную вещь: социально-экономическое развитие играет определяющее значение для укрепления моральных ценностей.
+                    </p>
+                    <button class="btn_black">Читать больше</button>
+                </div>
+                <div class="order__right">
+                    <div class="order__form-title">Ваши <span>данные</span></div>
+                    <div class="order__form">
+                        <form class="form">
+                            <div class="form__div">
+                              <input type="text" name="name" placeholder="Имя">
+                            </div>
+                            <div class="form__div">
+                              <input type="text" name="phone" placeholder="Телефон">
+                            </div>
+                            <div class="form__div">
+                                <input type="text" name="when" placeholder="Когда">
+                            </div>
+                            <div class="form__div">
+                                <input type="text" name="time" placeholder="Время">
+                            </div>
+                            <div class="form__div">
+                                <input type="text" name="start" placeholder="Куда подехать">
+                            </div>
+                            <div class="form__div">
+                                <input type="text" name="end" placeholder="Конечный пункт">
+                            </div>
+                            <div class="form__div">
+                                <input type="text" name="car" placeholder="Марка машины">
+                            </div>
+                            <button class="btn-form btn_black">Заказать</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="tarifs">
+        <div class="container">
+            <div class="tarifs__inner">
+                <h2 class="tarifs__title" id="our-tarifs"><span>Наши</span> цены</h2>
+                <div class="tarifs__block-items">
+                    <div class="tarifs__item tarifs__item-one">
+                        <img class="car" src="img/tarifs/tarif-img.png" alt="">
+                        <h3 class="tarifs__item-title">Эконом класс</h3>
+                        <p class="tarifs__item-text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
+                        <p class="tarifs__item-price">30руб./мин.</p>
+                        <button class="btn_yellow">Читать больше</button>
+                    </div>
+                    <div class="tarifs__item tarifs__item-under tarifs__item-two">
+                        <img class="car" src="img/tarifs/tarif-img.png" alt="">
+                        <h3 class="tarifs__item-title">Стандарт класс</h3>
+                        <p class="tarifs__item-text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
+                        <p class="tarifs__item-price">60руб./мин.</p>
+                        <button class="btn_black">Читать больше</button>
+                        <img class="rect" src="img/tarifs/star-rectangle.png" alt="">
+                    </div>
+                    <div class="tarifs__item tarifs__item-three">
+                        <img class="car" src="img/tarifs/tarif-img.png" alt="">
+                        <h3 class="tarifs__item-title">Деловой класс</h3>
+                        <p class="tarifs__item-text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
+                        <p class="tarifs__item-price">90руб./мин.</p>
+                        <button class="btn_yellow">Читать больше</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="bonuses">
+        <div class="container">
+            <div class="bonuses__inner">
+                <div class="titles" id="bonus">
+                    <h2 class="titles__title titles__title--yellow">Мы делаем всё возможное</h2>
+                    <h2 class="titles__title titles__title--white">Чтобы вас отблагодарить</h2>
+                </div>
+                <div class="bonuses__items">
+                    <div class="bonuses__item bonuses__item--one">
+                        <h3 class="bonuses__item-title">Подезжаем до "двери"</h3>
+                        <p class="bonuses__item-text">Есть над чем задуматься: некоторые особенности внутренней политики освещают чрезвычайно интересные особенности картины в целом.</p>
+                    </div>
+                    <div class="bonuses__item bonuses__item--two">
+                        <h3 class="bonuses__item-title">Быстрый заказ</h3>
+                        <p class="bonuses__item-text">Есть над чем задуматься: некоторые особенности внутренней политики освещают чрезвычайно интересные особенности картины в целом.</p>
+                    </div>
+                    <div class="bonuses__item bonuses__item--three">
+                        <h3 class="bonuses__item-title">Поощрения за поездки</h3>
+                        <p class="bonuses__item-text">Есть над чем задуматься: некоторые особенности внутренней политики освещают чрезвычайно интересные особенности картины в целом.</p>
+                    </div>
+                    <div class="bonuses__item bonuses__item--four">
+                        <h3 class="bonuses__item-title">Поиск по ГЛОНАСС</h3>
+                        <p class="bonuses__item-text">Есть над чем задуматься: некоторые особенности внутренней политики освещают чрезвычайно интересные особенности картины в целом.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="download">
+        <div class="container">
+            <div class="download__inner">
+                <div class="titles" id="app">
+                    <h2 class="titles__title titles__title--yellow2">Загрузите</h2><br>
+                    <h2 class="titles__title titles__title--black">Наше приложение</h2>
+                </div>
+                <div class="download__wrap">
+                    <h3 class="download__title">Наше приложение находится в открытом доступе и совершенно <span>бесплатно</span>!</h3>
+                    <p class="download__text">Прежде всего, экономическая повестка сегодняшнего дня предопределяет высокую востребованность модели развития. Но реализация намеченных плановых заданий предполагает независимые способы реализации новых принципов формирования материально-технической и кадровой базы.</p>
+                </div>
+                <div class="download__wrap2">
+                    <div class="download__market download__market-google">
+                        <p class="download__market-suptext">Android app on</p>
+                        <p class="download__market-text">Google Play</p>
+                    </div>
+                    <div class="download__market download__market-app">
+                        <p class="download__market-suptext">Download on</p>
+                        <p class="download__market-text">App Store</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="call">
+        <div class="container">
+            <div class="call__inner">
+                <h2 class="call__title">Мы готовы принять ваши звонки в любое время дня и ночи</h2>
+                <a class="call__phone" href="tel:9239171234567">923 (917) 12-34-567</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contacts">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__item">
+                    <h3 class="footer__item-title">О нас</h3>
+                    <div class="footer__item-stripe"></div>
+                    <p class="footer__item-text">Для современного мира постоянный количественный рост и сфера нашей активности играет важную роль в формировании экономической целесообразности принимаемых решений.</p>
+                    <div class="footer__item-social">
+                        <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://www.twiter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://www.vk.com"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <h3 class="footer__item-title">Наши контакты</h3>
+                    <div class="footer__item-stripe"></div>
+                    <div class="footer__item-contacts">
+                        <div class="footer__item-contacts footer__item-contacts-location">
+                            г.Краснодар, ул. Красная 67
+                        </div>
+                        <div class="footer__item-contacts footer__item-contacts-phone">
+                            +123 4567 8900
+                        </div>
+                        <div class="footer__item-contacts footer__item-contacts-mail">
+                            taxi-vezi@mail.ru
+                        </div>
+                        <div class="footer__item-contacts footer__item-contacts-site">
+                            wwww.taxi-vezi.ru
+                        </div>
+                        <a class="icons" href="https://icons8.com/icon/104417/квадратное-меню">Квадратное меню icon by Icons8</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="button-up animate__animated animate__bounce animate__slow animate__delay-5s animate__repeat-3">
+        <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+    </div> 
+
+    <!-- Перед этой библиотекой libs.min.js обязательно нужно подключить jquery -->
+    <!--<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/libs.min.js"></script>-->
+    <script src="js/main.js"></script>
+</body>
+</html>
