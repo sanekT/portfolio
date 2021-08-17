@@ -1,38 +1,32 @@
 function toggleSection(){
 
-    let links = document.querySelectorAll('.header__menu a');
+    let li = document.querySelectorAll('.menu__list-item');
     let home = document.querySelector('main .home');
     let works = document.querySelector('main .portfolio');
     let contact = document.querySelector('main .contact');
 
-    for(let key of links){
+    for(let key of li){
         key.addEventListener('click', function(e){
-            e.preventDefault();
-            if(key.dataset.hasOwnProperty('portfolio')){
-                contact.style.opacity = 0;
-                contact.style.zIndex = 0;
-                home.style.opacity = 0;
-                home.style.zIndex = 0;
-                works.style.opacity = 1;
-                works.style.zIndex = 1;
+            //e.preventDefault(); 
+            if(this.querySelector('a').dataset.section == 'portfolio'){
+                abc(0,0,1,1,0,0);
             }
-            if(key.dataset.hasOwnProperty('home')){
-                contact.style.opacity = 0;
-                contact.style.zIndex = 0;
-                works.style.opacity = 0;
-                works.style.zIndex = 0;
-                home.style.opacity = 1;
-                home.style.zIndex = 1;
+            if(this.querySelector('a').dataset.section == 'home'){
+                abc(0,0,0,0,1,1);
             }
-            if(key.dataset.hasOwnProperty('contact')){
-                contact.style.opacity = 1;
-                contact.style.zIndex = 1;
-                works.style.opacity = 0;
-                works.style.zIndex = 0;
-                home.style.opacity = 0;
-                home.style.zIndex = 0;
+            if(this.querySelector('a').dataset.section == 'contact'){
+                abc(1,1,0,0,0,0);
             }
         });
+    }
+
+    function abc(a1,a2,b1,b2,c1,c2){
+        contact.style.opacity = a1;
+        contact.style.zIndex = a2;
+        works.style.opacity = b1;
+        works.style.zIndex = b2;
+        home.style.opacity = c1;
+        home.style.zIndex = c2;
     }
 }
 
